@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: white;
+
+}
+
+.icon {
+    padding-top: 1.2rem;
+    padding-right: 0.5rem;
+    width: 3.125rem;
+}
+
+
+
+
+.background__img{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 43.75rem;
+    background-image: url(/assets/coffee-circle.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.background__img--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.75rem;
+    height: 12.15rem;
+    background-color: #393939;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+
+.nav-main {
+    background-color: #FFF0ED;
+    display: flex;
+    padding: 0.6rem;
+    align-items: baseline;
+}
+
+.nav-heading {
+    font-size: 1.3rem;
+    font-weight: 400;
+    list-style: none;
+}
+
+
+
+.nav-heading,
+.nav-heading__list,
+.nav-heading__list--blue {
+    display: inherit;
+    padding: 1.25rem;
+    margin: 0.1rem;
+}
+
+
+
+
+
+
+
+h1,
+h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: 300;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+
+.nav-heading__list {
+    text-decoration: none;
+    color: #393939;
+}
+
+.nav-heading__list--blue {
+    text-decoration: none;
+    color: #5BACC3;
+}
+
+
+.nav__links {
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__links--list {
+    text-decoration: none;
+    color: white;
+    border-left: 0.275rem solid #5BACC3;
+    height: 0.3rem;
+    align-items: center;
+
+}
+
+
+
+.nav__links,
+.nav__links--list {
+    display: inline-flex;
+    padding: 1.25rem;
+
+}
+
+.nav{
+    width: 100%;
+    height: 5rem;
+    background-color: #393939;
+    text-align: center;
+    color: white;
+
+}
+
+.main__section {
+    background-color: #FFF0ED;
+}
+
+.main__section--gray {
+    background-color: #F7F7F7;
+}
+
+h2.main__section--heading {
+    padding-bottom: 2rem;
+}
+
+.main__section--list {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+
+
+.main__section,
+.main__section--gray {
+    padding: 2rem;
+
+
+
+}
+
+.main__section--description {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    width: 50%;
+
+}
+
+
+p.main__section--price {
+    text-align: center;
+    font-style: normal;
+    color: #5BACC3;
+    padding-bottom: 1rem;
+}
+
