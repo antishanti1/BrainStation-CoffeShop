@@ -1,0 +1,116 @@
+@use './partials/global' as *;
+
+.background__img{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background-image: url(/assets/images/coffee-circle.jpg);
+    background-position: center;
+    background-size: cover;
+     
+
+}
+
+.background__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #393939;
+    position: relative;
+}
+
+.background__img-decoration{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    border: solid 5px #5BACC3;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: 300;
+    list-style: none;
+    text-align: center;
+}
+
+
+.nav__links {
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 1.25rem;
+
+    &--list {
+        text-decoration: none;
+        color: white;
+      border-left: 4.4px solid #5BACC3;
+    height: 4.8px;
+    align-items: center; 
+    display: inline-flex;
+    padding: 1.25rem;
+    }
+}
+
+
+.nav-section{
+    width: 100%;
+    height: 80px;
+    background-color: #393939;
+    text-align: center;
+    color: white;
+}
+
+#main-section__one, #main-section__three {
+    background-color:$primary-color;
+    padding: 2rem;
+}
+
+#main-section__two--gray {
+    background-color: $secondary-color;
+    padding: 2rem;
+}
+
+.main-section__heading {
+    padding-bottom: 2rem;
+}
+
+.main-section__list {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+
+.main-section__description {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    width: 50%;
+
+}
+
+p.main-section__price {
+    text-align: center;
+    font-style: normal;
+    color: #5BACC3;
+    padding-bottom: 1rem;
+}
+

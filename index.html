@@ -6,138 +6,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/landing.css" />
+  <!-- <link rel="stylesheet" href="./css/global.css" /> -->
+  <link rel="stylesheet" href="/scss/landing.css" />
   <title>Coffee Shop - Home</title>
 </head>
 
 <body>
-  <section class="nav-main">
-    <a class="icon" href="index.html">
-      <img src="assets/coffee-beans-logo-and-footer.svg" alt="coffee-beans-logo-and-footer">
+  <header>
+  <nav class="nav">
+    <div class="nav__icon" >
+    <a class="nav__icon-logo" href="index.html">
+      <img src="/assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee-bag">
     </a>
-
-
-    <h1>nitro</h1>
-    <ul class="nav-heading">
-      <li><a class="nav-heading__list" href="index.html">ABOUT</a></li>
-      <li><a class="nav-heading__list" href="menu.html">MENU</a></li>
-      <li><a class="nav-heading__list--blue" href="menu.html">SHOP NOW</a></li>
+    <a class="nav__heading" href="index.html">
+      <h2>nitro</h2>
+    </a>
+  </div>
+    <ul class="nav__list">
+      <li><a class="nav__list-link" href="index.html">ABOUT</a></li>
+      <li><a class="nav__list-link" href="/pages/menu.html">MENU</a></li>
+      <li><a class="nav__list-link--blue" href="/pages/menu.html">SHOP NOW</a></li>
     </ul>
-  </section>
-
-
+  </nav>
   <section class="coffee">
     <div class="coffee__content">
-      <h1 class="coffee__content--heading">Nitro Coffee</h1>
-      <p class="coffee__content--description">
+      <h1 class="coffee__content-heading">Nitro Coffee</h1>
+      <p class="coffee__content-description">
         Coffee is a brewed drink prepared from roasted coffee beans,the seeds of
         berries from certain Coffee species
       </p>
-      <a class="coffee__button" href="menu.html"><button class="button">SHOP NOW</button></a>
+      <div class="coffee__content-button">
+        <a href="/pages/menu.html"><div class="coffee__button-decoration"></div> </a>
+        <button class="coffee__button">SHOP NOW</button>
+      </div>
     </div>
-    <img class="coffee__image" src="assets/coffeebeans-hero.png" alt="coffee-bag" />
-
+    <img class="coffee__image" src="assets/images/coffeebeans-hero.png" alt="coffee-bag" />
   </section>
-
+</header>
   <section class="products-description">
-
     <h2 class="products-description__heading">Our Products</h2>
-
     <div class="cards">
       <div class="card">
-        <img class="card__image" src="assets/coffeebeans.png" alt="coffee beans" />
+        <img class="card__image" src="assets/images/coffeebeans.png" alt="coffee beans" />
         <div class="card__description">
           <h3 class="card__name">Coffee beans</h3>
           <p class="card__quanity">Pack of 3</p>
           <p class="card__price">$19</p>
         </div>
       </div>
-
       <div class="card">
-        <img class="card__image" src="assets/coldbrew.png" alt="cold brew" />
+        <img class="card__image" src="assets/images/coldbrew.png" alt="cold brew" />
         <div class="card__description">
           <h3 class="card__name">Cold Brew</h3>
           <p class="card__quanity">1 can</p>
           <p class="card__price">$5</p>
         </div>
       </div>
-
       <div class="card">
-        <img class="card__image" src="assets/inhousebrew.png" alt="in-house brew" />
+        <img class="card__image" src="assets/images/inhousebrew.png" alt="in-house brew" />
         <div class="card__description">
           <h3 class="card__name">In-house Brew</h3>
           <p class="card__quanity">1 cup</p>
           <p class="card__price">$3</p>
         </div>
       </div>
-
-
+     </div>
   </section>
-
-
   <div class="products-description__button">
-    <a href="menu.html"><button class="button">VIEW ALL</button></a>
+    <a href="/pages/menu.html"><div class="products-description__decoration"></div> </a>
+    <a href="pages/menu.html"><button class="button">VIEW ALL</button></a>
   </div>
-
   <section class="different">
     <div class="different__content">
-
       <h2>We're Different</h2>
-      <p class="different__content--description">We grow and roast our own beans.Every bean,every cup,every step of the
+      <p class="different__content-description">We grow and roast our own beans.Every bean,every cup,every step of the
         way,we strive for excellence.</p>
-      <div class="different__content--icons">
-        <img class="icon" src="assets/planting.svg" alt="planting">
-        <img class="icon--span" src="assets/coffee-beans.svg" alt="coffee-beans">
-        <img class="icon" src="assets/coffee-cup.svg" alt="coffee-cup">
+      <div class="different__content-icons">
+        <img class="different__content-icon" src="assets/logos/planting.svg" alt="planting">
+        <img class="different__content-icon--span" src="assets/logos/coffee-beans.svg" alt="coffee-beans">
+        <img class="different__content-icon" src="assets/logos/coffee-cup.svg" alt="coffee-cup">
       </div>
-      <button class="different__content--button">LEARN MORE</button>
-    </div>
-    <div class="different__image">
-      <img class="different__image--back" src="assets/coldbrewbackground.png" alt="coldbrewbackground">
-      <div class="different__image--inside">
-        <img class="differemt__image--front" src="assets/tiltedcan.png" alt="tiltedcan">
+      <div class="different__button">
+        <a href="/pages/menu.html"><div class="different__button-decoration"></div> </a>
+       <button class="different__content-button">LEARN MORE</button>
       </div>
     </div>
+    <div class="different__image-back">
+      <div class="different__image"></div>
+      <div class="different__image-inside">
+        <img src="assets/images/tiltedcan.png" alt="tiltedcan">
+      </div>
     </div>
-
   </section>
-
-
-
   <section class="discount-section">
     <div class="discount-section__box">
-      <p class="discount-section__box--text">
+      <p class="discount-section__box-text">
         Get 20% off your first order with code: <span class="discount-section__box--bold">FirstNitro</span>
       </p>
     </div>
   </section>
-
   <footer class="footer">
-
+    <div class="footer__image-left"></div>
     <div class="footer__addres">
       <h3 class="footer__heading">Address</h3>
       <p>503 Broadway Penthouse</p>
       <p>New York</p>
     </div>
-
     <div class="footer__hours">
       <h3 class="footer__heading">Hours</h3>
-      <p><span class="footer__bold">Monday - Friday: </span> 9am - 7pm</p>
-      <p><span class="footer__bold">Saturday - Sunday:</span> 10am - 5pm</p>
+      <p><span class="footer--bold">Monday - Friday: </span> 9am - 7pm</p>
+      <p><span class="footer--bold">Saturday - Sunday:</span> 10am - 5pm</p>
     </div>
-
     <div class="footer__social">
       <h3 class="footer__heading">Social</h3>
-
-      <a href="https://facebook.com"><img class="footer__social--icon" src="assets/Facebook-Icon.svg" alt="facebook">
+      <a href="https://facebook.com"><img class="footer__social-icon" src="assets/logos/Facebook-Icon.svg"
+          alt="facebook">
       </a>
-      <a href="https://yelp.com"><img class="footer__social--icon" src="assets/Yelp-Icon.svg" alt="yelp"></a>
-      <a href="https://instagram.com"><img class="footer__social--icon" src="assets/Instagram-Icon.svg"
+      <a href="https://yelp.com"><img class="footer__social-icon" src="assets/logos/Yelp-Icon.svg" alt="yelp"></a>
+      <a href="https://instagram.com"><img class="footer__social-icon" src="assets/logos/Instagram-Icon.svg"
           alt="instagram"></a>
     </div>
-
-
+    <div class="footer__image-right">
+    </div>
   </footer>
 </body>
 

@@ -1,0 +1,337 @@
+@use './partials/global' as *;
+
+
+.products-description__heading {
+    background-color: #F7F7F7;
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.products-description__button {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0 50px 0;
+    position: relative;
+    
+}
+
+.products-description__decoration {
+    width: 178px;
+    height: 46px;
+    border: solid 2px #393939;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -8px;
+       
+    &:active {
+            margin-top: 0;
+            margin-left: 0;
+    }
+}
+
+
+.coffee {
+    margin: 0;
+    background-color: #FFF0ED;
+    display: flex;
+    padding: 20px;
+      
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+        width: 40%;
+    }
+
+    &__image {
+        max-width: 280px;
+        height: auto;
+        margin: 0 5% 0 30%;
+        width: 50%;
+
+    }
+
+    &__content-description {
+        padding-bottom: 32px;
+        width: 320px;
+    }
+    
+    &__content-heading {
+        padding-bottom: 16px;
+    }
+    &__button-decoration{
+        width: 178px;
+        height: 46px;
+        border: solid 2px #393939;
+        position: absolute;
+        bottom: 5px;
+        left: -8px;
+        
+    }
+
+    &__button-decoration:active{
+        bottom: 0;
+        left: 0;
+    }
+    
+    &__content-button {
+        position: relative;
+    }
+    
+}
+
+
+
+.button, .coffee__button, 
+.different__content-button {
+    background-color: #5BACC3;
+    border: 0ch;
+    font-size: 1.25rem;
+    font-weight: 300;
+    width: 180px;
+    height: 48px;
+    padding: 1.25rem 1.25rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+}
+
+.cards {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 9px 1px gray;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    
+    &__description {
+        background-color: #FFF0ED;
+        width: auto;
+        height: 128px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: space-around;
+    }
+      &__name {
+        text-align: center;
+        padding-top: 20px;
+      }
+ 
+      &__image {
+        margin: auto;
+        display: block;
+        width: auto;
+        height: 280px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      &__quanity {
+        color: #909090;
+        font-weight: 300;
+      }
+
+      &__price {
+        color: #5BACC3;
+        font-size: 2.0625rem;
+        text-align: center;
+        padding-top: 1.25rem;
+        padding-left: 2rem;
+        font-weight: bold;
+      }
+
+
+}
+
+
+.discount-section {
+    margin: auto;
+    height: 400px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    &__box {
+        justify-content: center;
+    }
+
+    &__box-text {
+        font-size: 2.5rem;
+        font-weight: 400 700;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: #393939;
+        color: white;
+        text-align: center;
+    
+        animation: flash 2.5s ease-in-out 0s infinite alternate; 
+        @keyframes flash {
+           from {background-color: #393939;}
+            to {background-color:#5BACC3;}   
+        }
+    }
+
+    &--bold {
+        font-weight: bold;
+    }
+}
+
+
+
+.footer {
+    background-color: #FFF0ED;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+      
+   &__heading{
+    padding-bottom: 1rem;
+   }
+
+   &__social-icon {
+    width: 50px;
+   }
+
+   &--bold {
+    font-weight: bold;
+   }
+
+   &__image-left {
+    width: 120px;
+    height: 50%;
+    background-image: url(/assets/logos/coffee-beans-logo-and-footer.svg);
+    background-position: center;
+    background-size: cover;
+    opacity: 25%;
+    position: absolute;
+    left:-2.6rem;
+    margin-bottom: 5rem;
+   }
+
+   &__image-right {
+    width: 120px;
+    height: 50%;
+    background-image: url(/assets/logos/coffee-beans-logo-and-footer.svg);
+    background-position: center;
+    background-size: cover;
+    opacity: 25%;
+    position: absolute;
+    right: -2rem;
+    margin-top: 2rem;
+   }
+ 
+}
+
+.different {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+   &__content{
+    width: 50%;
+    padding: 1.25rem;
+    position: relative;
+   }
+
+   &__image {
+    width: 400px;
+    height: 400px;
+    border: solid 5px #5BACC3;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+   }
+
+   &__image-back {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url(/assets/images/coldbrewbackground.png);
+    background-position: center;
+    background-size: cover;
+    top: 3rem;
+    right: 1rem;
+   }
+  &__image-inside{
+    position: absolute;
+    align-items: center;
+    left: 7rem;
+  }
+
+  &__image-inside:hover {
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+  &__button {
+    margin-top: 2rem;
+  }
+  &__button-decoration {
+    width: 178px;
+    height: 46px;
+    border: solid 2px #393939;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+&__button-decoration:active {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+&__content-icons {
+    display: flex;
+    margin-top: 1.25rem;
+    width: 50px;
+}
+
+&__content-icon--span {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    width: 50px;
+}
+
+&__content-description {
+    width: 400px;
+    padding-top: 1.5rem;
+}
+}
+
+
+
+    
