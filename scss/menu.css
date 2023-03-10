@@ -5,7 +5,6 @@
 body {
   font-family: "Open Sans";
   font-weight: 400;
-  background-color: white;
 }
 
 .main-header {
@@ -32,7 +31,16 @@ p {
   background-color: #FFF0ED;
   display: flex;
   padding: 0.6rem;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  font-size: 1.3rem;
+  font-weight: 400;
+  align-items: center;
+}
+.nav__icon {
+  display: flex;
 }
 
 .nav-link {
@@ -41,16 +49,10 @@ p {
   list-style: none;
 }
 
-.nav__icon {
+.nav__icon-logo {
   padding-top: 1.2rem;
   padding-right: 0.5rem;
   width: 3.125rem;
-}
-
-.nav__list {
-  font-size: 1.3rem;
-  font-weight: 400;
-  align-items: center;
 }
 
 .nav__list,
@@ -144,14 +146,6 @@ h3 {
   color: white;
 }
 
-.main-section__one, .main-section__three {
-  background-color: #FFF0ED;
-}
-
-.main-section__two--gray {
-  background-color: #F7F7F7;
-}
-
 .main-section__heading {
   padding-bottom: 2rem;
 }
@@ -161,11 +155,6 @@ h3 {
   display: flex;
   justify-content: center;
   padding: 0.5rem;
-}
-
-.main-section__one,
-.main-section__three .main-section--gray {
-  padding: 2rem;
 }
 
 .main-section__description {

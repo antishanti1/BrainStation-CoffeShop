@@ -5,7 +5,6 @@
 body {
   font-family: "Open Sans";
   font-weight: 400;
-  background-color: white;
 }
 
 .main-header {
@@ -35,6 +34,11 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.nav__list {
+  font-size: 1.3rem;
+  font-weight: 400;
+  align-items: center;
+}
 .nav__icon {
   display: flex;
 }
@@ -49,12 +53,6 @@ p {
   padding-top: 1.2rem;
   padding-right: 0.5rem;
   width: 3.125rem;
-}
-
-.nav__list {
-  font-size: 1.3rem;
-  font-weight: 400;
-  align-items: center;
 }
 
 .nav__list,

@@ -1,0 +1,30 @@
+@mixin list-links {
+    display: inherit;
+    padding: 1.25rem;
+    margin: 0.1rem;
+    list-style: none;
+    text-decoration: none;
+    color: #393939;
+}
+
+@mixin decoration {
+    width: 178px;
+    height: 46px;
+    border: solid 2px $detail-color;
+    position: absolute;
+}
+
+@mixin button {
+    background-color: $tertiary-color;
+    border: 0ch;
+    font-size: 1.25rem;
+    font-weight: 300;
+    width: 180px;
+    height: 48px;
+    padding: 1.25rem 1.25rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+}
+    

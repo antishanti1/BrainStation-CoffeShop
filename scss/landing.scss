@@ -2,13 +2,13 @@
 
 
 .products-description__heading {
-    background-color: #F7F7F7;
+    background-color: $secondary-color;
     text-align: center;
     padding: 50px 0 20px 0;
 }
 
 .products-description__button {
-    background-color: #F7F7F7;
+    background-color: $secondary-color;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,10 +18,7 @@
 }
 
 .products-description__decoration {
-    width: 178px;
-    height: 46px;
-    border: solid 2px #393939;
-    position: absolute;
+  @include decoration;
     margin-top: -8px;
     margin-left: -8px;
        
@@ -31,10 +28,9 @@
     }
 }
 
-
 .coffee {
     margin: 0;
-    background-color: #FFF0ED;
+    background-color: $primary-color;
     display: flex;
     padding: 20px;
       
@@ -63,10 +59,7 @@
         padding-bottom: 16px;
     }
     &__button-decoration{
-        width: 178px;
-        height: 46px;
-        border: solid 2px #393939;
-        position: absolute;
+     @include decoration;
         bottom: 5px;
         left: -8px;
         
@@ -83,25 +76,14 @@
     
 }
 
-
-
 .button, .coffee__button, 
 .different__content-button {
-    background-color: #5BACC3;
-    border: 0ch;
-    font-size: 1.25rem;
-    font-weight: 300;
-    width: 180px;
-    height: 48px;
-    padding: 1.25rem 1.25rem;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 0;
+ @include button;
+
 }
 
 .cards {
-    background-color: #F7F7F7;
+    background-color: $secondary-color;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -118,7 +100,7 @@
     overflow: hidden;
     
     &__description {
-        background-color: #FFF0ED;
+        background-color: $primary-color;
         width: auto;
         height: 128px;
         padding: 20px;
@@ -159,7 +141,6 @@
 
 }
 
-
 .discount-section {
     margin: auto;
     height: 400px;
@@ -195,10 +176,8 @@
     }
 }
 
-
-
 .footer {
-    background-color: #FFF0ED;
+    background-color: $primary-color;
     height: 240px;
     display: flex;
     align-items: center;
@@ -301,10 +280,7 @@
     margin-top: 2rem;
   }
   &__button-decoration {
-    width: 178px;
-    height: 46px;
-    border: solid 2px #393939;
-    position: absolute;
+   @include decoration;
     margin-top: -0.5rem;
     margin-left: -0.5rem;
 }

@@ -1,6 +1,6 @@
 
 @use 'variables' as *;
- 
+@use 'mixins' as *;
 
 
 *{
@@ -10,7 +10,6 @@
 body {
     font-family: 'Open Sans';
     font-weight: 400;
-    background-color: white;
 }
 
 
@@ -34,13 +33,19 @@ p {
     font-weight: 400;
 }
 
-
 .nav {
     background-color: #FFF0ED;
     display: flex;
     padding: 0.6rem;
     justify-content: space-between;
     align-items: center;
+
+    &__list {
+        font-size: 1.3rem;
+        font-weight: 400;
+        align-items: center;
+    }
+
 
     &__icon{
         display: flex;
@@ -59,22 +64,11 @@ p {
     width: 3.125rem;
 }
 
-.nav__list {
-    font-size: 1.3rem;
-    font-weight: 400;
-    align-items: center;
-
-}
 
 .nav__list,
 .nav__list-link,
 .nav__list-link--blue {
-    display: inherit;
-    padding: 1.25rem;
-    margin: 0.1rem;
-    list-style: none;
-    text-decoration: none;
-    color: #393939;
+    @include list-links;
 }
 
 .nav__list-link--blue {
