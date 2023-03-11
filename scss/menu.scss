@@ -22,7 +22,7 @@
     color: white;
     text-align: center;
     margin: 0 auto;
-    background-color: #393939;
+    background-color: $detail-color;
     position: relative;
 }
 
@@ -32,7 +32,7 @@
     position: absolute;
     top: -1rem;
     left: -1rem;
-    border: solid 5px #5BACC3;
+    border: solid 5px $tertiary-color;
 }
 
 
@@ -60,7 +60,7 @@ h3 {
     &--list {
         text-decoration: none;
         color: white;
-      border-left: 4.4px solid #5BACC3;
+      border-left: 4.4px solid $tertiary-color;
     height: 4.8px;
     align-items: center; 
     display: inline-flex;
@@ -72,7 +72,7 @@ h3 {
 .nav-section{
     width: 100%;
     height: 80px;
-    background-color: #393939;
+    background-color: $detail-color;
     text-align: center;
     color: white;
 }
@@ -110,7 +110,7 @@ h3 {
 p.main-section__price {
     text-align: center;
     font-style: normal;
-    color: #5BACC3;
+    color: $tertiary-color;
     padding-bottom: 1rem;
 }
 

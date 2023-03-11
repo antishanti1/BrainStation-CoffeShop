@@ -34,24 +34,24 @@ p {
 }
 
 .nav {
-    background-color: #FFF0ED;
+    background-color: $primary-color;
     display: flex;
     padding: 0.6rem;
     justify-content: space-between;
     align-items: center;
+    
 
     &__list {
         font-size: 1.3rem;
         font-weight: 400;
         align-items: center;
+        
     }
-
-
     &__icon{
         display: flex;
     }
-}
 
+}
 .nav-link {
     font-size: 1.3rem;
     font-weight: 400;
@@ -73,12 +73,12 @@ p {
 
 .nav__list-link--blue {
     text-decoration: none;
-    color: #5BACC3;
+    color: $tertiary-color;
 }
 
 .nav__heading {
     text-decoration: none;
-    color: #393939;
+    color: $detail-color;
 }
 
 
